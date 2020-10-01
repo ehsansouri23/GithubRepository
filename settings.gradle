@@ -1,2 +1,4 @@
 include ':app'
+include ':domain'
+include ':data'
 rootProject.name = "Github Repository"
