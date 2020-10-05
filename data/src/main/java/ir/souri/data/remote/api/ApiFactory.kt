@@ -11,4 +11,6 @@ object ApiFactory {
                 GsonConverterFactory.create()
             )
             .build().create(Api::class.java)
+
+    const val PAGE_SIZE = 15
 }
