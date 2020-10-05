@@ -9,7 +9,7 @@ import retrofit2.http.Query
 interface Api {
 
     @GET("/search/repositories")
-    fun search(
+    suspend fun search(
         @Query("q") searchQuery: String,
         @Query("page") page: Int,
         @Query("per_page") pageSize: Int = ApiFactory.PAGE_SIZE
